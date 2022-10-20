@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: hsl(218, 22%, 67%);
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    opacity: 75%;
+    padding-left: 0;
+    line-height: 1.4rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: white;
+    max-width: 700px;
+    margin: 10rem auto;
+    border-radius: .75rem;
+    overflow: hidden;
+
+    /* -webkit-background-clip: padding-box; 
+    -moz-background-clip:    padding; 
+    background-clip:         padding-box; */
+    
+    box-shadow: 0 0 1.5rem -0.75rem currentColor;
+}
+
+.card-header {
+    grid-column: 1 / -1;
+    padding: 2rem 3rem;
+}
+
+.card-header h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.card-header h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.price-section {
+    padding: 2rem;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.price-text {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-top: 1.75rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text {
+    opacity: 65%;
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: .55rem;
+    padding: 1.25rem 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: .7rem .7rem 1rem -0.8rem hsl(179, 62%, 30%);
+    margin-top: 1.5rem;
+}
+
+.about-us-section {
+    padding: 2rem;
+    background-color: hsl(179, 67%, 45%);
+    color: white;
+}
