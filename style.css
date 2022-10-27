@@ -1,10 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* karla-regular - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/karla-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/karla-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
+/* karla-700 - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/karla-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/karla-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Globals */
 * {
     box-sizing: border-box;
 }
 
 body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
     background-color: hsl(204, 43%, 93%);
     font-family: 'Karla', sans-serif;
     font-size: 16px;
@@ -27,59 +51,64 @@ h2 {
     font-weight: 700;
 }
 
+
+/* The card */
 .card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 2rem;
     background-color: white;
     max-width: 700px;
-    margin: 10rem auto;
     border-radius: .75rem;
     overflow: hidden;
-
-    /* -webkit-background-clip: padding-box; 
-    -moz-background-clip:    padding; 
-    background-clip:         padding-box; */
-    
     box-shadow: 0 0 1.5rem -0.75rem currentColor;
 }
 
-.card-header {
+.card__header {
     grid-column: 1 / -1;
     padding: 2rem 3rem;
 }
 
-.card-header h1 {
+.card__header h1 {
     color: hsl(179, 62%, 43%);
 }
 
-.card-header h2 {
+.card__header h2 {
     color: hsl(71, 73%, 54%);
 }
 
-.price-section {
+.card__subscription {
     padding: 2rem;
     background-color: hsl(179, 62%, 43%);
     color: white;
 }
 
-.price-text {
+.card__subscription div.price-text {
     display: flex;
     gap: 1em;
     align-items: center;
     margin-top: 1.75rem;
 }
 
-.price {
+div.price-text .price {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
 }
 
-.text {
+div.price-text .text {
     opacity: 65%;
     margin: 0;
 }
 
+.card__about {
+    padding: 2rem;
+    background-color: hsl(179, 67%, 45%);
+    color: white;
+}
+
+
+/* Buttons */
 .btn {
     display: block;
     width: 100%;
@@ -92,10 +121,4 @@ h2 {
     font-weight: 700;
     box-shadow: .7rem .7rem 1rem -0.8rem hsl(179, 62%, 30%);
     margin-top: 1.5rem;
-}
-
-.about-us-section {
-    padding: 2rem;
-    background-color: hsl(179, 67%, 45%);
-    color: white;
 }
