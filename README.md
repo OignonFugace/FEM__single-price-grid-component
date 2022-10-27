@@ -8,12 +8,9 @@ This is a solution to the Single Price Grid challenge on [Frontend Mentor](https
 	- [Screenshot](#screenshot)
 	- [Links](#links)
 - [My process](#my-process)
-	- [Built with](#built-with)
 	- [What I learned](#what-i-learned)
-	- [Continued development](#continued-development)
-	- [Useful resources](#useful-resources)
+	- [Questions to community](#questions-to-community)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -23,30 +20,27 @@ This is a solution to the Single Price Grid challenge on [Frontend Mentor](https
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: [GitHub - OignonFugace/FEM__single-price-grid-component](https://github.com/OignonFugace/FEM__single-price-grid-component)
+- Live Site URL: [Frontend Mentor | Single Price Grid Component](https://oignonfugace.github.io/FEM__single-price-grid-component/)
 
 ## My process
 
-### Built with
-
-
-### What I learned
+### What I learned & Useful ressources 
+- CSS Grid.
+- Proper use of semantics HTML elements. 
+	- [HTML section elements are a lie (sort of) - YouTube](https://www.youtube.com/watch?v=ULdkpU51hTQ)
+		- [HTML Sectioning Elements: ARIA Landmarks Example](https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/HTML5.html)
+		- A `section` is being marked a a `region` only when it has a `title`, or better : reference the title of the section with an `id` on the title and `aria-labelledby="the-title-id"`.
+		- Hence section must have a heading in them.
+		- `aria-label` is another possibility. 
+	- [The problem with multiple nav elements (and the simple solution) - YouTube](https://www.youtube.com/watch?v=I1lq2ge7g4g)
 
 
 ### Questions to community
-
-
-### Continued development
-
-
-### Useful resources
+- Any feedback appreciated. 
 
 
 ## Author
-
 - Website - [Oignon Fugace - par Tanguy Freycon](https://oignonfugace.com/)
 - Frontend Mentor - [@OignonFugace](https://www.frontendmentor.io/profile/OignonFugace)
-
-## Acknowledgments
 
